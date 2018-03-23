@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const models = require("../models");
+
 const tokenStatus = {
   ACTIVE: 1,
   INACTIVE: 2
@@ -59,3 +60,5 @@ exports.swaggerSecurityHandler = function(
     });
   });
 };
+
+exports.loginWithFacebook = (req, res) => {};

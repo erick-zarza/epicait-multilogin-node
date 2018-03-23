@@ -28,7 +28,7 @@ const usrSchema = mongoose.Schema(
     },
     email: {
       type: String,
-      required: [true, "the email is required"],
+
       validate: {
         validator: function(v) {
           var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -54,7 +54,8 @@ const usrSchema = mongoose.Schema(
     admin: {
       type: Boolean,
       default: false
-    }
+    },
+    oauth: { type: Object }
   },
   { timestamps: true }
 );

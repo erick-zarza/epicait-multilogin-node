@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const bluebird = require("bluebird");
 
-exports.dbSetup = config => {
+exports.dbSetup = (config) => {
   mongoose.Promise = global.Promise;
   let dbURI;
   if (!config.dbURI) {
