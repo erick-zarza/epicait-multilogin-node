@@ -1,35 +1,36 @@
-# Blynkworks API
-## Run project
-```
-- npm install
-- swagger project start
-```
-#### Run in mock mode
-```
-swagger project start -m
+# test
+[![dependencies Status][daviddm-image]][daviddm-url] [![devDependencies Status][daviddm-dev-image]][daviddm-dev-url] [![codecov][codecov-image]][codecov-url] [![Build Status][travis-image]][travis-url] 
+
+
+## Development setup
+```bash
+$ npm install -g gulp
+$ git clone 
+$ mongod
+$ gulp
 ```
 
-## To Open the API editor
-#### In a new terminal with the server up
-```
-swagger project edit
-```
-## Run tests
-```
-swagger project test
-```
+## Gulp Tasks:
+- Run `gulp` to serve:dev and run swagger editor.
+- Run `gulp test` to run unit tests with mocha.
+- Run `gulp build` to build dist.
+- Run `gulp serve:dist` to serve production.
+- Run `gulp serve` to serve development.
+- Run `gulp clean:dist` to clean dist folder.
+- Run `gulp swagger` to run swagger editor.
+- Run `gulp lint` to run linting.
+- Run `gulp lint:fix` to fix fixable errors.
 
-# Run Environment With Docker :whale2:
-```
-docker-compose up -d
-```
 
-## Start containers
-```
-docker-compose start
-```
 
-## Stop containers
-```
-docker-compose stop
-```
+[daviddm-image]: http://img.shields.io/david/.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/
+[daviddm-dev-url]: https://david-dm.org/?type=dev
+[daviddm-dev-image]: https://img.shields.io/david/dev/.svg?style=flat-square
+
+
+[travis-image]: https://img.shields.io/travis/.svg?style=flat-square
+[travis-url]: https://travis-ci.org/
+[codecov-url]: https://codecov.io/gh/
+[codecov-image]: https://img.shields.io/codecov/c/github/.svg?style=flat-square
+

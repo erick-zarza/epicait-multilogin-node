@@ -1,0 +1,46 @@
+{
+  "plugins": ["node", "import"],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": 2018
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "recommended/node/style-guide",
+    "plugin:import/errors",
+    "plugin:import/warnings"
+  ],
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "amd": true,
+    "mocha": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "import/default": 0,
+    "import/no-duplicates": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/no-unresolved": 0,
+    "import/no-named-as-default": 2,
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unpublished-require": true,
+    "import/extensions": 0,
+    "indent": ["error", 2],
+    "no-console": "off",
+    "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
+    "node/exports-style": ["error", "module.exports"]
+  },
+  "globals": {
+    "Parse": true
+  },
+  "settings": {
+    "import/resolve": {
+      "moduleDirectory": ["node_modules"]
+    }
+  }
+}
